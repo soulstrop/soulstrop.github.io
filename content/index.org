@@ -1,0 +1,26 @@
+#+title: Org Mode Example Site
+* Overview
+This is an example of a web site written with Org Mode!
+* Links
+- [[https://systemcrafters.net/][System Crafters official site]]
+- [[https://www.youtube.com/@SystemCrafters][System Crafters YouTube site]]
+
+
+#+begin_src plantuml :file network-diagram.png
+@startuml
+nwdiag {
+  network Tailnet {
+    address = "100.";
+    js-macbook-pro [address = "100.91.115.47"];
+    pi-hole-tailscale-experiment [address = "100.118.137.95"];
+    pixel-6-pro [address = "100.80.80.32"];
+  }
+}
+@enduml
+
+#+end_src
+
+#+results:
+[[file:network-diagram.png]]
+
+[[file:./network-diagram.png][Current Tailnet]]
